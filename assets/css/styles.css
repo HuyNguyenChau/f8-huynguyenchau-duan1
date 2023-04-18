@@ -43,18 +43,20 @@ a {
     font-weight: 500;
     font-size: 1.4rem;
 }
-
-/* ==============================================================HEADER============================================================= */
+/* ===========================================================HEADER================================================================= */
 .header {
-    position: relative;
-    height: 100vh;
+    position: sticky;
+    z-index: 1; /*Ưu tiên hiện thị đè lên trên các phần còn lại, số càng cao thì càng nằm trên cao */
+    top: -0px;
     background-color: #e6f0ff;
+    /* display: flex; Chỉ có 1 phần content nên sẽ chiếm hết
+    flex-direction: column; */
 }
 /* ================NAVBAR================ */
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 .navbar ul {
     display: flex;
@@ -83,9 +85,16 @@ a {
 .navbar a:hover {
     text-decoration: underline;
 }
+/* ==============================================================HERO================================================================ */
+.hero-wrap {
+    position: relative;
+    height: 100vh;
+    background-color: #e6f0ff;
+}
+
 /* ==========HERO INFO============= */
 .hero {
-    margin-top: 130px;
+    padding-top: 130px; /*Hoặc nhập display: flex; flex-direction: column; ở phần .header để thay thế padding */
     width: 50.3%; /* 559px */
 }
 .hero .info .sub-title {
@@ -549,7 +558,7 @@ a {
 .footer .social {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 16px;
     margin-top: 40px;
 }
 .footer .social-link {
@@ -562,5 +571,5 @@ a {
     color: #c2c2c2;
 }
 .footer .row .social-link:hover img {
-    border: 1px solid blue;
+    border: 1px solid black;
 }
