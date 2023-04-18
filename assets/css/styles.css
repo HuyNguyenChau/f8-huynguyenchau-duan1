@@ -547,7 +547,13 @@ a {
     width: 257px;
 }
 .footer .social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
     margin-top: 40px;
+}
+.footer .social-link {
+    background: #f9f9f9;
 }
 .footer .row-2 .copyright {
     font-weight: 400;
