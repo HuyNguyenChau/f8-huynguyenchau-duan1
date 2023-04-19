@@ -91,11 +91,13 @@ a {
     position: relative;
     height: calc(100vh - 64px);
     background-color: #e6f0ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 /* ==========HERO INFO============= */
 .hero {
-    padding-top: 130px; /*Hoặc nhập display: flex; flex-direction: column; ở phần .header để thay thế padding */
+    /* Hoặc nhập display: flex; flex-direction: column; ở phần .header để thay thế padding */
     width: 50.3%; /* 559px */
 }
 .hero .info .sub-title {
@@ -130,7 +132,6 @@ a {
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
 }
-
 /* =========================================================CLIENTS=============================================================== */
 .clients {
     margin-top: 79px;
