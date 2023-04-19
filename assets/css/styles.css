@@ -3,6 +3,7 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1.6rem;
@@ -47,7 +48,7 @@ a {
 .header {
     position: sticky;
     z-index: 1; /*Ưu tiên hiện thị đè lên trên các phần còn lại, số càng cao thì càng nằm trên cao */
-    top: -0px;
+    top: 0;
     background-color: #e6f0ff;
     /* display: flex; Chỉ có 1 phần content nên sẽ chiếm hết
     flex-direction: column; */
